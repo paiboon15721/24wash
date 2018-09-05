@@ -5,6 +5,14 @@
 }
 
 nav {
+  .navbar-toggler {
+    border: 0;
+
+    .navbar-toggler-icon {
+      background-image: url('../img/berger-menu.svg');
+    }
+  }
+
   .navbar-brand {
     color: $primary !important;
   }
@@ -13,21 +21,29 @@ nav {
     width: 4rem;
 
     @include media-breakpoint-down(md) {
-      content:url("../img/logo-w.svg")
+      content: url('../img/logo-w.svg');
     }
   }
 
   .nav-item {
     box-sizing: border-box;
     margin: 0 2rem;
+
     a {
       display: block;
       width: 7rem;
+      border: 1px solid transparent;
       text-align: center;
+
       &:hover {
         color: $primary !important;
         border: 1px solid $primary;
         border-radius: $border-radius;
+
+        @include media-breakpoint-down(md) {
+          color: white !important;
+          border: 1px solid white;
+        }
       }
     }
   }
