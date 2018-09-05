@@ -7,6 +7,14 @@
     hr {
       width: 35%;
       border-top: 2px solid $primary;
+
+      @include media-breakpoint-down(md) {
+        width: 25%;
+      }
+
+      @include media-breakpoint-down(xs) {
+        width: 10%;
+      }
     }
   }
 

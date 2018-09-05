@@ -1,3 +1,9 @@
+.bg-light {
+  @include media-breakpoint-down(md) {
+    background-color: $primary !important;
+  }
+}
+
 nav {
   .navbar-brand {
     color: $primary !important;
@@ -5,6 +11,10 @@ nav {
 
   .logo {
     width: 4rem;
+
+    @include media-breakpoint-down(md) {
+      content:url("../img/logo-w.svg")
+    }
   }
 
   .nav-item {
