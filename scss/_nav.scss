@@ -1,0 +1,24 @@
+nav {
+  .navbar-brand {
+    color: $primary !important;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+
+  .nav-item {
+    box-sizing: border-box;
+    margin: 0 2rem;
+    a {
+      display: block;
+      width: 7rem;
+      text-align: center;
+      &:hover {
+        color: $primary !important;
+        border: 1px solid $primary;
+        border-radius: $border-radius;
+      }
+    }
+  }
+}

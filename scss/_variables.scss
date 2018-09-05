@@ -1,0 +1,12 @@
+$font-family-base: 'Kanit';
+$theme-colors: (
+  'primary': #f1431c,
+  'light': white,
+);
+$primary: map-get($theme-colors, primary);
+$navbar-padding-x: 3rem;
+$navbar-padding-y: 0rem;
+$navbar-brand-font-size: 3rem;
+$border-radius: 1.5rem;
+$input-btn-padding-x: 2rem;
+$font-weight-normal: 300;

@@ -1,0 +1,24 @@
+.content {
+  div {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    hr {
+      width: 35%;
+      border-top: 2px solid $primary;
+    }
+  }
+
+  img {
+    margin: 2rem;
+    width: 8rem;
+    border: 0.2rem solid $primary;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,20 @@
+footer {
+  border-top: 1px solid $primary;
+
+  .navbar {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .copyrights {
+    padding: 0.8rem;
+    color: white;
+    font-weight: 100;
+    background-color: $primary;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
