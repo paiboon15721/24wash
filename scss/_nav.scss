@@ -1,3 +1,9 @@
+@mixin active() {
+  color: $primary !important;
+  border: 1px solid $primary;
+  border-radius: $border-radius;
+}
+
 .bg-light {
   @include media-breakpoint-down(md) {
     background-color: $primary !important;
@@ -25,6 +31,12 @@ nav {
     }
   }
 
+  .navbar-nav {
+    .active > .nav-link {
+      @include active();
+    }
+  }
+
   .nav-item {
     box-sizing: border-box;
     margin: 0 2rem;
@@ -36,9 +48,7 @@ nav {
       text-align: center;
 
       &:hover {
-        color: $primary !important;
-        border: 1px solid $primary;
-        border-radius: $border-radius;
+        @include active();
 
         @include media-breakpoint-down(md) {
           color: white !important;
